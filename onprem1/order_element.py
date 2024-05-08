@@ -121,5 +121,5 @@ class OrderElements(BaseCase):
         # Clear any existing text in the search input field
         search_input.clear()
         # Enter the search query "Juan's Store" into the input field
-        search_input.send_keys("Tess Store")
+        search_input.send_keys("Juan's Store")
         time.sleep(4)

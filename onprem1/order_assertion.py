@@ -154,6 +154,6 @@ class OrderAssertions(BaseCase):
         td_text = self.get_text(xpath_locator)
 
         # Assert that the expected text ("Juan's Store") is present in the <td> element
-        expected_text = "Tess Store"
+        expected_text = "Juan's Store"
         self.assert_equal(td_text, expected_text, f"Expected '{expected_text}', but found '{td_text}'")
         time.sleep(4)
