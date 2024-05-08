@@ -16,6 +16,9 @@ class TestDashboard(LoginUtility, DetailElements, DetailAssertions, OrderElement
         # click Orders
         self.click_orders_button()
         
+        self.set_date()
+        # self.assert_select_date()
+        
         self.select_province()
         self.assert_select_province()
         
@@ -24,9 +27,6 @@ class TestDashboard(LoginUtility, DetailElements, DetailAssertions, OrderElement
         
         self.select_barangay()
         self.assert_select_barangay()
-        
-        self.select_date()
-        self.assert_select_date()
         
         self.select_user()
         self.assert_select_user()
@@ -55,10 +55,9 @@ class TestDashboard(LoginUtility, DetailElements, DetailAssertions, OrderElement
         self.search_store()
         self.assert_search_store()
         
-##############################################################
+# ##############################################################+
 
         self.set_date()
-
         # Click the first reference number  
         self.click_reference()
     
@@ -98,16 +97,15 @@ class TestDashboard(LoginUtility, DetailElements, DetailAssertions, OrderElement
         self.click_order_button()
         
         # Click other reference
-        self.click_order_by_reference_number("F-1-9")
+        # self.click_order_by_reference_number("F-1-8")
         
         # Click Void
-        self.click_void()
-        self.assert_void()
+        # self.click_void()
+        # self.assert_void()
         
         # # test void form
-        self.input_void_form() 
-                
-        # self.click_orders_button()
-        # self.click_voided_ref("J2-1-2")
+        # self.input_void_form() 
+
+        self.click_voided_ref("F-1-9")
         self.assert_void_form()
-         
+        
