@@ -37,7 +37,7 @@ class OrderElements(BaseCase):
         
     def select_barangay(self):
         self.wait_for_element_visible("select#barangay")
-        self.click("select#barangay")  # Click on the city dropdown to expand it
+        self.click("select#barangay")  # Click on the barangay dropdown to expand it
         self.select_option_by_value("select#barangay", "18818")
         time.sleep(3)
         

@@ -1,0 +1,24 @@
+test_order_page.py::TestDashboard::test_access_orders_page
+--------------------------------------------------------------------
+Last Page: https://review.onprem-cloud.nweca.com/nadmin/macpos/orders
+ Duration: 204.19s
+  Browser: Chrome 124.0.6367.119
+   Driver: chromedriver 124.0.6367.60
+Timestamp: 1715328034  (Unix Timestamp)
+     Date: Friday, 10 May 2024
+     Time: 4:00:34 PM  (Malay Peninsula Standard Time, UTC+08:00)
+--------------------------------------------------------------------
+Traceback:
+  File "C:\Onprem\onprem1\test_order_page.py", line 70, in test_access_orders_page
+    self.click_order_by_reference_number("R11555-1-")
+  File "C:\Onprem\onprem1\detail_element.py", line 113, in click_order_by_reference_number
+    self.wait_for_element_visible("xpath", f"//span[@class='fsc-9 me-1 badge badge-success' and text()='{reference_number}']")
+  File "C:\Users\Gerald\Desktop\Selenium project\selenium_tutorial\selenium_project\myenv\Lib\site-packages\seleniumbase\fixtures\base_case.py", line 8640, in wait_for_element_visible
+    return page_actions.wait_for_element_visible(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gerald\Desktop\Selenium project\selenium_tutorial\selenium_project\myenv\Lib\site-packages\seleniumbase\fixtures\page_actions.py", line 494, in wait_for_element_visible
+    timeout_exception(NoSuchElementException, message)
+  File "C:\Users\Gerald\Desktop\Selenium project\selenium_tutorial\selenium_project\myenv\Lib\site-packages\seleniumbase\fixtures\page_actions.py", line 252, in timeout_exception
+    raise exc(msg)
+Exception: Message: 
+ Element {//span[@class='fsc-9 me-1 badge badge-success' and text()='R11555-1-']} was not present after 10 seconds!
